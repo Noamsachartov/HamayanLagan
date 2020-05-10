@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="js/makat.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/makat.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/991446b1ff.js" crossorigin="anonymous"></script>
+    <title>המעיין לגן בע׳׳מ</title>
+    <link rel="icon" href="images/logo.jpeg">
+</head>
+<body>
+<!-- Navbar -->
+<div class="pos-f-t fixed-top ">
+  <nav class="navbar fixed-top navbar-light navbar-style">
+      <a class="navbar-brand" href="#main-header"><span class="dot-style">.</span>המעיין לגן</a>
+      <div class="row d-none d-lg-block navTitle">
+        <a href="#whowe" class="col-lg-3 .d-none">מי אנחנו</a>
+        <a href="#catsec" class="col-lg-3 .d-none">קטלוג</a>
+        <a href="#discsec" class="col-lg-3 .d-none">מבצעים וחדשים</a>
+        <a href="#contsec" class="col-lg-3 .d-none">יצירת קשר והזמנות</a>
+      </div>
+    <button id="btoggler" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="collapse navTitleCollaps" id="navbarToggleExternalContent"  >
+      <div onclick="closer()" class=" p-4 " style="background-color: #e1f0fb;">
+           <a class="navbar-brand" href="#main-header"><span class="dot-style">.</span>המעיין לגן</a>
+           <a href="#contsec" class="nav-link">יצירת קשר והזמנות</a>
+           <a href="#catsec" class="nav-link">קטלוג</a>
+           <a href="#discsec" class="nav-link">מבצעים וחדשים</a>
+           <a href="#whowe" class="nav-link">מי אנחנו</a>
+      </div>
+    </div>
+</div>
+<!-- End Navbar -->
+<!-- Jumbotron -->
+<div id="main-header" class="">
+    <div class="row no-gutters justify-content-center">
+        <a href="#contsec" class="btn-contact btn btn-outline-info">ליצירת קשר והזמנות</a>
+        <img class="col-12 col-xl-12 cover-main" src="images/gan2.jpg" alt="">
+    </div> 
+</div>
+<!-- End Jumbotron -->
+<div class="row justify-content-center">
+  <p class="BigTitle ">המעיין לגן</p>
+</div>
+
+<!-- v list -->
+<div class="vList d-none d-md-block">
+  <div class="row">
+    <p class="col-6">איכות</p><i class="fas fa-check fa-lg col-6" style="align-self: right;"></i>
+  </div>
+  <div class="row">
+    <p class="col-6">מחיר תחרותי</p><i class="fas fa-check fa-lg col-6"></i>
+  </div>
+  <div class="row">
+    <p class="col-6">אמינות</p><i class="fas fa-check fa-lg col-6"></i>
+  </div> 
+</div>
+<!-- end Vlist -->
+<div id="catsec">
+  <button id="btnToggleCatalog1" class="buttonS button2 " onclick="remove_catalog1()">מעבר לצפייה בכל המוצרים</button>
+  <button id="btnToggleCatalog2" class="buttonS button2 togglerBtnCatalog" onclick="remove_catalog2()" >חזרה לתצוגה הקודמת</button>
+</div>
+<!-- catalog1 -->
+<div id="catalog1" class="catalog-section1 togglerBtnCatalog">
+  <div class="container verticalView" onmouseover="changePositionDrop()" onmouseout="removechangepos()" >
+    <div class="row">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active d-none d-sm-block " id="section1-tab" data-toggle="pill" href="#section1" role="tab" aria-controls="section1" aria-selected="true">כונניות</a>
+          <a class="nav-link d-none d-sm-block" id="section2-tab" data-toggle="pill" href="#section2" role="tab" aria-controls="section2" aria-selected="false">לוחות</a>
+          <a class="nav-link d-none d-sm-block" id="section3-tab" data-toggle="pill" href="#section3" role="tab" aria-controls="section3" aria-selected="false">פינות בובה ובובות</a>
+          <a class="nav-link d-none d-sm-block" id="section4-tab" data-toggle="pill" href="#section4" role="tab" aria-controls="section4" aria-selected="false">פינות מדע וחשבון</a>
+          <a class="nav-link d-none d-sm-block" id="section5-tab" data-toggle="pill" href="#section5" role="tab" aria-controls="section5" aria-selected="false">פינת משחקים וקוביות</a>
+          <a class="nav-link d-none d-sm-block" id="section6-tab" data-toggle="pill" href="#section6" role="tab" aria-controls="section6" aria-selected="false">פינת ספרייה</a>
+          <a class="nav-link d-none d-sm-block" id="section7-tab" data-toggle="pill" href="#section7" role="tab" aria-controls="section7" aria-selected="false">פינת ציור ויצירה</a>
+          <a class="nav-link d-none d-sm-block" id="section8-tab" data-toggle="pill" href="#section8" role="tab" aria-controls="section8" aria-selected="false">פינת קודש</a>
+          <a class="nav-link d-none d-sm-block" id="section9-tab" data-toggle="pill" href="#section9" role="tab" aria-controls="section9" aria-selected="false">פינת רופא</a>
+          <a class="nav-link d-none d-sm-block" id="section10-tab" data-toggle="pill" href="#section10" role="tab" aria-controls="section10" aria-selected="false">פינת תוכן ויצירה</a>
+          <a class="nav-link d-none d-sm-block" id="section11-tab" data-toggle="pill" href="#section11" role="tab" aria-controls="section11" aria-selected="false">ציוד למעונות</a>
+          <a class="nav-link d-none d-sm-block" id="section12-tab" data-toggle="pill" href="#section12" role="tab" aria-controls="section12" aria-selected="false">קולבים</a>
+          <a class="nav-link d-none d-sm-block" id="section13-tab" data-toggle="pill" href="#section13" role="tab" aria-controls="section13" aria-selected="false">שולחנות וכסאות</a>
+        <!--  -->
+        <div id="dropposition" class="dropdown btnbeforeafterpos d-sm-none col-4 " >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            קטגוריות
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" >
+            <a class="nav-link active" id="section1-tab" data-toggle="pill" href="#section1" role="tab" aria-controls="section1" aria-selected="true">כונניות</a>
+            <a class="nav-link dropdown-item" id="section2-tab" data-toggle="pill" href="#section2" role="tab" aria-controls="section2" aria-selected="false">לוחות</a>
+            <a class="nav-link dropdown-item" id="section3-tab" data-toggle="pill" href="#section3" role="tab" aria-controls="section3" aria-selected="false">פינות בובה ובובות</a>
+            <a class="nav-link dropdown-item" id="section4-tab" data-toggle="pill" href="#section4" role="tab" aria-controls="section4" aria-selected="false">פינות מדע וחשבון</a>
+            <a class="nav-link dropdown-item" id="section5-tab" data-toggle="pill" href="#section5" role="tab" aria-controls="section5" aria-selected="false">פינת משחקים וקוביות</a>
+            <a class="nav-link dropdown-item" id="section6-tab" data-toggle="pill" href="#section6" role="tab" aria-controls="section6" aria-selected="false">פינת ספרייה</a>
+            <a class="nav-link dropdown-item" id="section7-tab" data-toggle="pill" href="#section7" role="tab" aria-controls="section7" aria-selected="false">פינת ציור ויצירה</a>
+            <a class="nav-link dropdown-item" id="section8-tab" data-toggle="pill" href="#section8" role="tab" aria-controls="section8" aria-selected="false">פינת קודש</a>
+            <a class="nav-link dropdown-item" id="section9-tab" data-toggle="pill" href="#section9" role="tab" aria-controls="section9" aria-selected="false">פינת רופא</a>
+            <a class="nav-link dropdown-item" id="section10-tab" data-toggle="pill" href="#section10" role="tab" aria-controls="section10" aria-selected="false">פינת תוכן ויצירה</a>
+            <a class="nav-link dropdown-item" id="section11-tab" data-toggle="pill" href="#section11" role="tab" aria-controls="section11" aria-selected="false">ציוד למעונות</a>
+            <a class="nav-link dropdown-item" id="section12-tab" data-toggle="pill" href="#section12" role="tab" aria-controls="section12" aria-selected="false">קולבים</a>
+            <a class="nav-link dropdown-item" id="section13-tab" data-toggle="pill" href="#section13" role="tab" aria-controls="section13" aria-selected="false">שולחנות וכסאות</a>
+          </div>
+        </div>
+        
+      <!--  -->
+      </div>
+      </div>
+      <div class="col-10 col-sm-9">
+        <div class="tab-content showdropdownMargin" id="v-pills-tabContent">
+          <div class="tab-pane fade show active " id="section1" role="tabpanel" aria-labelledby="section1-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ארון 18 מגירות עץ</p>
+                  <p class="number-pro">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 86 ס"מ</p>
+                  <p class="number-pro"> מק׳׳ט - 11823 </p>
+                </div>
+              </div>
+              <div class="card  col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון 18 מגירות פלסטיק</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 100 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1013 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">סלון בובה</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כוננית משחקים</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כוננית ספרים נמוכה</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כוננית רב שימושית מפוארת</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category1/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כוננית רב שימושית</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section2" role="tabpanel" aria-labelledby="section2-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">לוח נייד דו צדדי</p>
+                    <p class="number-pro">גובה - 60 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 90720 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">לוח דו צדדי שטיח-מחיק</p>
+                    <p class="number-pro"> מק׳׳ט - 111 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">לוח דו צדדי שטיח-מחיק</p>
+                  <p class="number-pro">מק׳׳ט - 1114</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">לוח לבד</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">לוח משולב</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">לוח נייד דו צדדי - גדול</p>
+                    <p class="number-pro">גובה - 80 ס"מ ורוחב/קוטר - 180 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 90721 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category2/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">קוליסה 3 כנפיים</p>
+                    <p class="number-pro">גובה - 200 ס"מ ורוחב/קוטר - 210 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 771 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section3" role="tabpanel" aria-labelledby="section3-tab">
+              <div class="row ">
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">ארון בובה מפואר</p>
+                          <p class="number-pro">גובה - 100 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                          <p class="number-pro"> מק׳׳ט - 90719 </p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">ארון בובה</p>
+                          <p class="number-pro">גובה - 100 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                          <p class="number-pro"> מק׳׳ט - 30216 </p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">מיטה לבובה גדולה</p>
+                          <p class="number-pro">מק"ט - 30216</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">מראה תלויה 60/80</p>
+                          <p class="number-pro">מק"ט - 1045</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">מראה תלויה 60/120</p>
+                          <p class="number-pro">מק"ט - 1038</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/6.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">סלון בובה רך</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/7.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">עגלת טיול בובה</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/8.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">עגלת טיול</p>
+                          <p class="number-pro">מק"ט - 30221</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/9.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">עגלת שכיבה</p>
+                          <p class="number-pro">מק"ט - 30222</p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/10.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">פינת יופי- פרח</p>
+                          <p class="number-pro">גובה - 100 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                          <p class="number-pro"> מק׳׳ט - 30225 </p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/11.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">פינת יופי ואיפור</p>
+                          <p class="number-pro">גובה - 100 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                          <p class="number-pro"> מק׳׳ט - 30224 </p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/12.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">פינת רחיצה והחתלה</p>
+                          <p class="number-pro">גובה - 52 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                          <p class="number-pro"> מק׳׳ט - 767 </p>
+                      </div>
+                  </div>
+                  <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                      <img src="images/category3/13.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <p class="card-text">שולחן וכסאות בובה - מתכת</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="section4" role="tabpanel" aria-labelledby="section4-tab">
+            <div class="row">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category4/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן מחשב</p>
+                    <p class="number-pro">גובה - 60 ס"מ, עומק - 55 ס"מ ורוחב/קוטר - 110 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1068 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category4/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן מדע ומחשב</p>
+                    <p class="number-pro">גובה - 120 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 10760 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section5" role="tabpanel" aria-labelledby="section5-tab">
+            <div class="row container">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון לקוביות</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 11811 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כוננית וכולב תחפושות עם מראה</p>
+                    <p class="number-pro">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1022א </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כוננית מחיצה דו צדדית משולבת</p>
+                    <p class="number-pro">גובה - 130 ס"מ, עומק - 50 ס"מ ורוחב/קוטר - 200 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1025 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כוננית משחקים מפוארת</p>
+                    <p class="number-pro">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1022 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">עגלה לקוביות נבובות</p>
+                  <p class="number-pro">מק׳׳ט -11813</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">קוביות מוצקות ועגלה</p>
+                    <p class="number-pro">גובה - 42 ס"מ, עומק - 63 ס"מ ורוחב/קוטר - 70 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 11815 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קוביות נבובות</p>
+                  <p class="number-pro">מק"ט - 11818</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category5/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קוביות פלסטיק צבעוניות 10 יח׳</p>
+                  <p class="number-pro">מק"ט - 11816</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section6" role="tabpanel" aria-labelledby="section6-tab">
+            <div class="row">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category6/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ספריה חמש מדורים</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 150 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 40309 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category6/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">דוכן מכירות</p>
+                    <p class="number-pro">גובה - 125 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1018 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category6/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כוננית ספרים נמוכה</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 40312 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category6/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן ספריה בינוני</p>
+                    <p class="number-pro">קוטר - 80 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 40318 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section7" role="tabpanel" aria-labelledby="section7-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category7/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון אחסון ציורים</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 45 ס"מ ורוחב/קוטר - 70 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60514 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category7/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">מעמד לציור</p>
+                  <p class="number-pro">מק"ט - 50519</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category7/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">דוכן ציור מפואר</p>
+                    <p class="number-pro">גובה - 105 ס"מ, עומק - 45 ס"מ ורוחב/קוטר - 90 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60527 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section8" role="tabpanel" aria-labelledby="section8-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category8/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עמוד תפילה</p>
+                    <p class="number-pro">גובה - 70 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 40 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 50352 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category8/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">פינת תפילה משולבת</p>
+                    <p class="number-pro">גובה - 187 ס"מ, עומק - 60 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 50321 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section9" role="tabpanel" aria-labelledby="section9-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">מתלה מדי רופא</p>
+                  <p class="number-pro">מק"ט - 70612</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון תרופות תלוי עם דלת</p>
+                    <p class="number-pro">גובה - 40 ס"מ, עומק - 20 ס"מ ורוחב/קוטר - 40 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 70598 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כוננית תרופות</p>
+                    <p class="number-pro">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 70622 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">מיטת רופא</p>
+                  <p class="number-pro">מק"ט - 70615</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">פרגוד מתכת בד לפרגוד</p>
+                  <p class="number-pro">מק"ט - 70616</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category9/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן רופא</p>
+                    <p class="number-pro">גובה - 52 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 70620 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section10" role="tabpanel" aria-labelledby="section10-tab">
+            <div class="row">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">פינת תוכן עץ</p>
+                  <p class="number-pro">מס מוצר- 1234</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">פינת יצירה עם לוח תוכן</p>
+                    <p class="number-pro">גובה - 50 ס"מ, עומק - 160 ס"מ ורוחב/קוטר - 50 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 10762 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארגז כלים משולב בשולחן נגריה</p>
+                    <p class="number-pro">גובה - 20 ס"מ, עומק - 12 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 40333 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון כלי נגריה</p>
+                    <p class="number-pro">גובה - 60 ס"מ, עומק - 20 ס"מ ורוחב/קוטר - 40 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 40319 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלות יצירה</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת 4 מיכלים</p>
+                    <p class="number-pro">גובה - 62 ס"מ, עומק - 89 ס"מ ורוחב/קוטר - 72 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60517 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת גרוטאות</p>
+                    <p class="number-pro">גובה - 72 ס"מ, עומק - 52 ס"מ ורוחב/קוטר - 84 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60520 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת יצירה</p>
+                    <p class="number-pro">גובה - 90 ס"מ ורוחב/קוטר - 75 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60530 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת עולם הילד שקופה</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת עולם הילד</p>
+                    <p class="number-pro">גובה - 55 ס"מ, עומק - 61 ורוחב/קוטר - 115 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 60518 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">פינת טבע מדורגת</p>
+                    <p class="number-pro">גובה - 65 ס"מ, עומק - 44 ורוחב/קוטר - 81 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 10758 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">פינת מים</p>
+                  <p class="number-pro">מק"ט - 60515</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן חימר</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן יצירה ומשחק</p>
+                    <p class="number-pro">גובה - 110 ס"מ, עומק - 60 ורוחב/קוטר - 105 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 30300 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן נגרות</p>
+                    <p class="number-pro">גובה - 55 ס"מ, עומק - 60 ורוחב/קוטר - 110 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 11822 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category10/16.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן תוכן</p>
+                    <p class="number-pro">גובה - 55 ס"מ, עומק - 40 ורוחב/קוטר - 160 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 10761 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section11" role="tabpanel" aria-labelledby="section11-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ארון</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון קופסאות שליפה</p>
+                    <p class="number-pro">גובה - 97 ס"מ, עומק - 60 ורוחב/קוטר - 117 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 12851 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">מדף קופסאות</p>
+                    <p class="number-pro">גובה - 40 ס"מ, עומק - 35 ורוחב/קוטר - 106 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 12853 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">מיטה</p>
+                    <p class="number-pro">גובה - 120 ס"מ, עומק - 8 ורוחב/קוטר - 60 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 12854 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלה למזרנים לשינה</p>
+                    <p class="number-pro">גובה - 110 ס"מ, עומק - 60 ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 12854 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ארון שירות מיכלים מודולרי</p>
+                  <p class="number-pro">מק"ט - 111</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">מתקן לבקבוקים ומוצצים</p>
+                    <p class="number-pro">מק"ט - 12871</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category11/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">עגלת אוכל</p>
+                    <p class="number-pro">גובה - 78 ס"מ, עומק - 52 ורוחב/קוטר - 84 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 12858 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section12" role="tabpanel" aria-labelledby="section12-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category12/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ארון לתיקים</p>
+                    <p class="number-pro">גובה - 140 ס"מ, עומק - 40 ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1012 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category12/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קולב ארוך נייד</p>
+                  <p class="number-pro">מק"ט - 1012</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category12/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קולב לסינרים</p>
+                  <p class="number-pro">מק"ט - 60522</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category12/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קולב נייד עגול</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category12/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">קולב נייד</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="section13" role="tabpanel" aria-labelledby="section13-tab">
+            <div class="row ">
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">מתקן משחקים ומגלשות</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כיסא עץ</p>
+                    <p class="number-pro">גובה - 30 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1034 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כיסא פלסטיק</p>
+                    <p class="number-pro">גובה - 30 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1040 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כיסא עם משענות</p>
+                  <p class="number-pro">מק"ט - 1033</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ספסל פלסטיק</p>
+                    <p class="number-pro">גובה - 30 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1041 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">ספסל עץ</p>
+                    <p class="number-pro">גובה - 30 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1043 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ספסל עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכיסאות לבנים מעץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כסאות בצבעים</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכיסאות</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכיסאות</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכיסאות</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכיסאות</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כיסא</p>
+                    <p class="number-pro">גובה - 30 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1032 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/16.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">כסא יום הולדת מפואר</p>
+                    <p class="number-pro">גובה - 30 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 30330 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/17.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">כיסא עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3"  style="width: 18rem;">
+                <img src="images/category13/18.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ספסל גן רגלי עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/19.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ספסל גן רגלי עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/20.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן אבנר</p>
+                    <p class="number-pro">גובה - 52 ס"מ, עומק - 70 ורוחב/קוטר - 90 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1058 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/21.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן גן מתכת מרובע</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/22.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן גן עץ מרובע ל-8 ילדים</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/23.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן גן עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/24.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן גן רגלי מתכת</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/25.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן גן</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/26.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן דגם גולן</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/27.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן וכסאות גוון בז׳</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/28.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן כסאות גוון שמנת</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/29.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן טרפז</p>
+                    <p class="number-pro">גובה - 52 ס"מ, עומק - 105 ורוחב/קוטר - 48 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1066 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/30.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן ספריה עץ</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/31.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">שולחן עץ רגלי מתכת</p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/32.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן פרסה מעץ</p>
+                    <p class="number-pro">גובה - 52 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1064 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/33.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן פרסה רגל מתכת בינוני ל-6 ילדים</p>
+                    <p class="number-pro">גובה - 52 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1065 </p>
+                </div>
+              </div>
+              <div class="card col-12 col-sm-4 col-xl-3" style="width: 18rem;">
+                <img src="images/category13/34.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">שולחן פרסה רגל מתכת גדול ל-8 ילדים</p>
+                    <p class="number-pro">גובה - 52 ס"מ</p>
+                    <p class="number-pro"> מק׳׳ט - 1063 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End catalog2 -->
+<div id="catalog2" class="catalog-section">
+  <div class="container">
+    <!-- Cards -->
+    <div class="container">
+      <div class="row justify-content-center ">
+          <div class="card col-6 col-sm-4 col-md-3" style="width: 16rem;">
+              <img src="images/category1/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">כונניות</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".bd-example-modal-xl">צפייה במוצרים</button>
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category2/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">לוחות</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info  btn-more-product" data-toggle="modal" data-target=".modal-section2">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 16rem;">
+              <img src="images/category3/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינות בובה ובובות</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section3">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 16rem;">
+              <img src="images/category4/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינות מדע וחשבון</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section4">צפייה במוצרים</button>    
+              </div>
+            </div>  
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category5/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינת משחקים וקוביות</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section5">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img id="library-card" src="images/category6/3.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">פינת ספריה</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info  btn-more-product" data-toggle="modal" data-target=".modal-section6">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category7/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינת ציור ויצירה</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section7">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category8/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינת קודש</h5>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section8">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category9/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינת רופא</h5>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section9">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category10/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">פינת תוכן ויצירה</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section10">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category11/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ציוד למעונות</h5>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section11">צפייה במוצרים</button>    
+              </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3" style="width: 18rem;">
+              <img src="images/category13/8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">שולחנות וכיסאות</h5>
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-info btn-more-product" data-toggle="modal" data-target=".modal-section13">צפייה במוצרים</button>    
+              </div>
+            </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- catalog - section 1 -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+          <!-- carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="item-desc">
+                    <p class="product-name">ארון 18 מגירות עץ</p>
+                    <p class="product-size">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 86 ס"מ</p>
+                    <p class="product-num">מק׳׳ט - 11823 </p>
+                  </div>
+                  <img src="images/category1/7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="item-desc">
+                        <p class="product-name">ארון 18 מגירות פלסטיק</p>
+                        <p class="product-size">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 100 ס"מ</p>
+                    </div>
+                  <img src="images/category1/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">סלון בובה</p>
+                  </div>
+                  <img src="images/category1/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">כוננית משחקים</p>
+                  </div>
+                  <img src="images/category1/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">כוננית ספרים נמוכה</p>
+                  </div>
+                  <img src="images/category1/4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">כוננית רב שימושית מפוארת</p>
+                  </div>
+                  <img src="images/category1/5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">כוננית רב שימושית</p>
+
+                  </div>
+                  <img src="images/category1/6.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          <!-- End Carousel -->
+      </div>
+    </div>
+    </div>
+    <!--  -->
+    <!-- catalog - section 2 -->
+    <div class="modal fade modal-section2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                  <!-- <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li> -->
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">לוח נייד דו צדדי</p>
+                      <p class="product-size">גובה - 60 ס"מ ורוחב/קוטר - 80 ס"מ </p>
+                      <p class="product-num">מק׳׳ט - 90720 </p>
+                    </div>
+                    <img src="images/category2/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח דו צדדי שטיח-מחיק</p>
+                      <p class="product-num" >מק"ט - 111</p>
+                    </div>
+                    <img src="images/category2/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח דו צדדי שטיח-מחיק</p>
+                      <p class="product-num" >מק"ט - 111</p>
+                    </div>
+                    <img src="images/category2/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח לבד</p>
+                    </div>
+                    <img src="images/category2/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח משולב</p>
+                    </div>
+                    <img src="images/category2/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שם המוצר</p>
+                      <p class="product-size">מידות:</p>
+                      <p class="product-num" >מס׳ מוצר - 12345..</p>
+                    </div>
+                    <img src="images/category2/6.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">קוליסה 3 כנפיים</p>
+                      <p class="product-size">גובה - 200 ס"מ ורוחב/קוטר - 210 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 771 </p>
+                    </div>
+                    <img src="images/category2/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+    </div>
+    <!-- catalog - section 3 -->
+    <div class="modal fade modal-section3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="9"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="10"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="11"></li>
+                  <li data-target="#carouselExampleIndicators3" data-slide-to="12"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון בובה מפואר</p>
+                      <p class="product-size">גובה - 100 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 90719</p>
+                    </div>
+                    <img src="images/category3/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארון בובה</p>
+                      <p class="product-size">גובה - 100 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                      <p class="product-num">ממק׳׳ט - 30216 </p>
+                    </div>
+                    <img src="images/category3/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מיטה ועריסה לבובה גדולה</p>
+                      <p class="product-num">מק"ט - 30216</p>
+                    </div>
+                    <img src="images/category3/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מראה תלויה 60/80</p>
+                      <p class="product-num">מס׳ מק"ט - 1045</</p>
+                    </div>
+                    <img src="images/category3/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name"> 60/120 מראה תלויה</p>
+                      <p class="product-num">מק"ט - 1038</p>
+                    </div>
+                    <img src="images/category3/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">סלון בובה רך</p>
+                    </div>
+                    <img src="images/category3/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת טיול בובה</p>
+                    </div>
+                    <img src="images/category3/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת טיול</p>
+                      <p class="product-num">מק"ט - 30221</p>
+                    </div>
+                    <img src="images/category3/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת שכיבה</p>
+                      <p class="product-num">מק"ט - 30222</p>
+                    </div>
+                    <img src="images/category3/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="item-desc">
+                      <p class="product-name">פינת יופי-פרח</p>
+                      <p class="product-size">גובה - 100 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 30225</p>
+                    </div>
+                    <img src="images/category3/10.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פינת יופי ואיפור</p>
+                      <p class="product-size">גובה - 100 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                      <p class="product-num">מס׳ מוצר - 30224..</p>
+                    </div>
+                    <img src="images/category3/11.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פינת רחיצה והחתלה</p>
+                      <p class="product-size">גובה - 52 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 767</p>
+                    </div>
+                    <img src="images/category3/12.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכסאות בובה - מתכת</p>
+                    </div>
+                    <img src="images/category3/13.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Catalog - section 4 -->
+    <div class="modal fade modal-section4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+          <!-- carousel -->
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="item-desc">
+                    <p class="product-name">שולחן מחשב</p>
+                    <p class="product-size">גובה - 60 ס"מ, עומק - 55 ס"מ ורוחב/קוטר - 110 ס"מ</p>
+                    <p class="product-num">מק׳׳ט - 1068 </p>
+                  </div>
+                  <img src="images/category4/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <div class="item-desc">
+                    <p class="product-name">שולחן מדע וחשבון</p>
+                    <p class="product-size">גובה - 120 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                    <p class="product-num">מק׳׳ט - 10760 </p>
+                  </div>
+                  <img src="images/category4/2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          <!-- End Carousel -->
+      </div>
+    </div>
+    </div>
+    <!--  -->
+    <!-- Catalog - section 5 -->
+    <div class="modal fade modal-section5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators5" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון לקוביות</p>
+                      <p class="product-size">גובה - 80 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 11811 </p>
+                    </div>
+                    <img src="images/category5/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית וקולב תחפושות עם מראה</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1022א </p>
+                    </div>
+                    <img src="images/category5/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית מחיצה דו צדדית משולבת</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 50 ס"מ ורוחב/קוטר - 200 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1025 </p>
+                    </div>
+                    <img src="images/category5/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית משחקים מפוארת</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1022 </p>
+                    </div>
+                    <img src="images/category5/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלה לקוביות נבובות</p>
+                      <p class="product-num">מק׳׳ט -11813</p>
+                    </div>
+                    <img src="images/category5/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">קוביות מוצקות ועגלה</p>
+                      <p class="product-size">גובה - 42 ס"מ, עומק - 63 ס"מ ורוחב/קוטר - 70 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 11815</p>
+                    </div>
+                    <img src="images/category5/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">קוביות נבובות</p>
+                      <p class="product-num">מק׳׳ט - 11818</p>
+                    </div>
+                    <img src="images/category5/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">קוביות פלסטיק צבעוניות 10 יח׳</p>
+                      <p class="product-num">מק"ט - 11816</p>
+                    </div>
+                    <img src="images/category5/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 6 -->
+    <div class="modal fade modal-section6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators6" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון לקוביות</p>
+                      <p class="product-size">גובה - 80 ס"מ, עומק - 30 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 11811 </p>
+                    </div>
+                    <img src="images/category6/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית וקולב תחפושות עם מראה</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1022א </p>
+                    </div>
+                    <img src="images/category6/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית מחיצה דו צדדית משולבת</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 50 ס"מ ורוחב/קוטר - 200 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1025 </p>
+                    </div>
+                    <img src="images/category6/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית משחקים מפוארת</p>
+                      <p class="product-size">גובה - 130 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 157 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1022 </p>
+                    </div>
+                    <img src="images/category6/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!--catalog section 7 -->
+    <div class="modal fade modal-section7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון מדפים לציורים</p>
+                      <p class="product-size">גובה - 80 ס"מ, עומק - 45 ס"מ ורוחב/קוטר - 70 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60514 </p>
+                    </div>
+                    <img src="images/category7/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח ציור</p>
+                      <p class="product-num">מק"ט - 50519</p>
+                    </div>
+                    <img src="images/category7/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">דוכן ציורים מפואר</p>
+                      <p class="product-size">גובה - 105 ס"מ, עומק - 45 ס"מ ורוחב/קוטר - 90 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60527 </p>
+                    </div>
+                    <img src="images/category7/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 8 -->
+    <div class="modal fade modal-section8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators8" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון מדפים לציורים</p>
+                      <p class="product-size">גובה - 80 ס"מ, עומק - 45 ס"מ ורוחב/קוטר - 70 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60514 </p>
+                    </div>
+                    <img src="images/category8/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">לוח ציור</p>
+                      <p class="product-num">מק"ט - 50519</p>
+                    </div>
+                    <img src="images/category8/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 9 -->
+    <div class="modal fade modal-section9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators9" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">מטלה מדים לרופא</p>
+                      <p class="product-num">מק"ט - 70612</p>
+                    </div>
+                    <img src="images/category9/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארון תרופות תלוי עם דלת</p>
+                      <p class="product-size">גובה - 40 ס"מ, עומק - 20 ס"מ ורוחב/קוטר - 40 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 70598 </p>
+                    </div>
+                    <img src="images/category9/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כוננית תרופות</p>
+                      <p class="product-size">גובה - 80 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 80 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 70622 </p>
+                    </div>
+                    <img src="images/category9/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מיטת רופא</p>
+                      <p class="product-num">מק"ט - 70615 </p>
+                    </div>
+                    <img src="images/category9/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פרגוד מתכת בד</p>
+                      <p class="product-num">מק"ט - 70616</p>
+                    </div>
+                    <img src="images/category9/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן רופא</p>
+                      <p class="product-size">גובה - 52 ס"מ, עומק - 40 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 70620 </p>
+                    </div>
+                    <img src="images/category9/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 10 -->
+    <div class="modal fade modal-section10" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="9"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="10"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="11"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="12"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="13"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="14"></li>
+                  <li data-target="#carouselExampleIndicators10" data-slide-to="15"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">פינת יצירה</p>
+                      <p class="product-size">גובה - 50 ס"מ, עומק - 160 ס"מ ורוחב/קוטר - 50 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 10762</p>
+                    </div>
+                    <img src="images/category10/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פינת ברוכים הבאים</p>
+                    </div>
+                    <img src="images/category10/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארגז כלים משולב נגריה</p>
+                      <p class="product-size">גובה - 20 ס"מ, עומק - 12 ס"מ ורוחב/קוטר - 60 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 40333</p>
+                    </div>
+                    <img src="images/category10/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארון כלי נגריה</p>
+                      <p class="product-size">גובה - 60 ס"מ, עומק - 20 ס"מ ורוחב/קוטר - 40 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 40319 </p>
+                    </div>
+                    <img src="images/category10/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלות יצירה</p>
+                    </div>
+                    <img src="images/category10/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת 4 מיכלים</p>
+                      <p class="product-size">גובה - 62 ס"מ, עומק - 89 ס"מ ורוחב/קוטר - 72 ס"מ</p>
+                      <p class="product-num" מק׳׳ט - 60517</p>
+                    </div>
+                    <img src="images/category10/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת גורטאות</p>
+                      <p class="product-size">מגובה - 72 ס"מ, עומק - 52 ס"מ ורוחב/קוטר - 84 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60520 </p>
+                    </div>
+                    <img src="images/category10/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת יצירה</p>
+                      <p class="product-size">גובה - 90 ס"מ ורוחב/קוטר - 75 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60530</p>
+                    </div>
+                    <img src="images/category10/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת עולם הילד שקופה</p>
+                    </div>
+                    <img src="images/category10/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת עולם הילד</p>
+                      <p class="product-size">גובה - 55 ס"מ, עומק - 61 ורוחב/קוטר - 115 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 60518</p>
+                    </div>
+                    <img src="images/category10/10.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פינת טבע מדורגת</p>
+                      <p class="product-size">גובה - 65 ס"מ, עומק - 44 ורוחב/קוטר - 81 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 10758 </p>
+                    </div>
+                    <img src="images/category10/11.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">פינת מים</p>
+                      <p class="product-num">מק"ט - 60515</p>
+                    </div>
+                    <img src="images/category10/12.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן חימר</p>
+                    </div>
+                    <img src="images/category10/13.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן יצירה ומשחק</p>
+                      <p class="product-size">גובה - 110 ס"מ, עומק - 60 ורוחב/קוטר - 105 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 30300 </p>
+                    </div>
+                    <img src="images/category10/14.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן נגרות</p>
+                      <p class="product-size">גובה - 55 ס"מ, עומק - 60 ורוחב/קוטר - 110 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 11822 </p>
+                    </div>
+                    <img src="images/category10/15.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן תוכן</p>
+                      <p class="product-size">גובה - 55 ס"מ, עומק - 40 ורוחב/קוטר - 160 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 10761 </p>
+                    </div>
+                    <img src="images/category10/16.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators10" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators10" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 11 -->
+    <div class="modal fade modal-section11" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators11" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators11" data-slide-to="8"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">ארון</p>
+                    </div>
+                    <img src="images/category11/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארון קופסאות שליפה</p>
+                      <p class="product-size">גובה - 97 ס"מ, עומק - 60 ורוחב/קוטר - 117 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 12851</p>
+                    </div>
+                    <img src="images/category11/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מדף קופסאות</p>
+                      <p class="product-size">גובה - 40 ס"מ, עומק - 35 ורוחב/קוטר - 106 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 12853 </p>
+                    </div>
+                    <img src="images/category11/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מיטה</p>
+                      <p class="product-size">גובה - 120 ס"מ, עומק - 8 ורוחב/קוטר - 60 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 12854 </p>
+                    </div>
+                    <img src="images/category11/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת מזרנים לשינה</p>
+                      <p class="product-size">גובה - 110 ס"מ, עומק - 60 ורוחב/קוטר - 120 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 12854 </p>
+                    </div>
+                    <img src="images/category11/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ארון שירות מיכלים מודולרי</p>
+                      <p class="product-num">מק"ט - 111</p>
+                    </div>
+                    <img src="images/category11/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">מתקן לבקבוקים ומוצצים</p>
+                      <p class="product-num">מק"ט - 12871</p>
+                    </div>
+                    <img src="images/category11/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">עגלת אוכל</p>
+                      <p class="product-size">גובה - 78 ס"מ, עומק - 52 ורוחב/קוטר - 84 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 12858 </p>
+                    </div>
+                    <img src="images/category11/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators11" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators11" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+    <!-- catalog section 13 -->
+    <div class="modal fade modal-section13" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <!-- carousel -->
+            <div id="carouselExampleIndicators13" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="9"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="10"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="11"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="12"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="13"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="14"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="15"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="16"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="17"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="18"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="19"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="20"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="21"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="22"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="23"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="24"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="25"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="26"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="27"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="28"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="29"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="30"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="31"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="32"></li>
+                  <li data-target="#carouselExampleIndicators13" data-slide-to="33"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="item-desc">
+                      <p class="product-name">מתקן משחקים ומגלשות</p>
+                    </div>
+                    <img src="images/category13/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא עץ</p>
+                      <p class="product-size">גובה - 30 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1034 </p>
+                    </div>
+                    <img src="images/category13/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא פלסטיק</p>
+                      <p class="product-size">גובה - 30 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1040 </p>
+                    </div>
+                    <img src="images/category13/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא עם משענות</p>
+                      <p class="product-num">מק"ט - 1033</p>
+                    </div>
+                    <img src="images/category13/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא משענות עץ</p>
+                      <p class="product-num">מק"ט - 1033</p>
+                    </div>
+                    <img src="images/category13/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name"> ספסל פלסטיק</p>
+                      <p class="product-size">גובה - 30 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1041 </p>
+                    </div>
+                    <img src="images/category13/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ספסל עץ</p>
+                      <p class="product-size">גובה - 30 ס"מ ורוחב/קוטר - 120 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1043 </p>
+                    </div>
+                    <img src="images/category13/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ספסל עץ</p>
+                    </div>
+                    <img src="images/category13/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכיסאות לבנים מעץ</p>
+                    </div>
+                    <img src="images/category13/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כסאות בצבעים</p>
+                    </div>
+                    <img src="images/category13/10.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכיסאות</p>
+                    </div>
+                    <img src="images/category13/11.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכיסאות</p>
+                    </div>
+                    <img src="images/category13/12.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכיסאות</p>
+                    </div>
+                    <img src="images/category13/13.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכיסאות</p>
+                    </div>
+                    <img src="images/category13/14.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא</p>
+                      <p class="product-size">גובה - 30 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1032 </p>
+                    </div>
+                    <img src="images/category13/15.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כסא יום הולדת</p>
+                      <p class="product-size">גובה - 30 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 30330</p>
+                    </div>
+                    <img src="images/category13/16.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">כיסא עץ</p>
+                    </div>
+                    <img src="images/category13/17.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ספסל גן נערם רגלי מתכת</p>
+                    </div>
+                    <img src="images/category13/18.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">ספסל גן רגלי עץ</p>
+                    </div>
+                    <img src="images/category13/19.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן אבנר</p>
+                      <p class="product-size">גובה - 52 ס"מ, עומק - 70 ורוחב/קוטר - 90 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1058</p>
+                    </div>
+                    <img src="images/category13/20.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן גן מתכת מרובע</p>
+                    </div>
+                    <img src="images/category13/21.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן גן עץ מרובע ל - 8 ילדים</p>
+                    </div>
+                    <img src="images/category13/22.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן גן עץ</p>
+                    </div>
+                    <img src="images/category13/23.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן גן רגלי מתכת</p>
+                    </div>
+                    <img src="images/category13/24.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן גן</p>
+                    </div>
+                    <img src="images/category13/25.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן דגם גולן</p>
+                    </div>
+                    <img src="images/category13/26.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן וכסאות גוון בק</p>
+                    </div>
+                    <img src="images/category13/27.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן כסאות גוון שמנת</p>
+                    </div>
+                    <img src="images/category13/28.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן טרפז</p>
+                      <p class="product-size">גובה - 52 ס"מ, עומק - 105 ורוחב/קוטר - 48 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1066 </p>
+                    </div>
+                    <img src="images/category13/29.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן ספריה עץ</p>
+                    </div>
+                    <img src="images/category13/30.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן עץ רגלי מתכת</p>
+                    </div>
+                    <img src="images/category13/31.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן פרסה מעץ</p>
+                      <p class="product-size">גובה - 52 ס"מ</p>
+                      <p class="product-num">ממק׳׳ט - 1064 </p>
+                    </div>
+                    <img src="images/category13/32.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן פרסה רגל מתכת בינוני ל-6 ילדים</p>
+                      <p class="product-size">גובה - 52 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1065 </p>
+                    </div>
+                    <img src="images/category13/33.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-desc">
+                      <p class="product-name">שולחן פרסה רגל מתכת גדול ל-8 ילדים</p>
+                      <p class="product-size">גובה - 52 ס"מ</p>
+                      <p class="product-num">מק׳׳ט - 1063</p>
+                    </div>
+                    <img src="images/category13/34.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators13" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators13" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!-- End Carousel -->
+        </div>
+      </div>
+      </div>
+    <!--  -->
+  </div>
+</div>
+<!-- End Catalog -->
+<!-- Discounts & New products -->
+<div id="discsec" class="discounts-section">
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active toggle-Weight" onclick="toggleTitle1()" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">מבצעים</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="toggleTitle2()" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">חדשים במלאי</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+      </li> -->
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <!-- מבצעים -->
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <div class="card card-discount" >
+              <p class="discount-Percent">20%</p>
+              <img class="card-img-top" src="images/category1/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"> ארון 18 מגירות פלסטיק</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 1013</p>
+                <!-- <button class="btn btn-primary btn-size-up" >לחץ להגדלה</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card card-discount" >
+              <p class="discount-Percent">30%</p>
+              <img class="card-img-top" src="images/category8/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">פינת תפילה משולבת</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 50321</p>
+                <!-- <button class="btn btn-primary btn-size-up" >לחץ להגדלה</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 d-none d-sm-block">
+            <div class="card card-discount" >
+              <p class="discount-Percent">25%</p>
+              <img class="card-img-top" src="images/category9/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">ארון תרופות תלוי עם דלת</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 70598</p>
+                <!-- <button class="btn btn-primary btn-size-up" >לחץ להגדלה</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- חדשים במלאי -->
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <div class="card card-discount" >
+              <p class="discount-new">חדש</p>
+              <img class="card-img-top" src="images/category11/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"> ארון קופסאות שליפה</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 12851</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card card-discount" >
+              <p class="discount-new"> חדש</p>
+              <img class="card-img-top" src="images/category12/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">קולב ארוך נייד</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 1012</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 d-none d-sm-block">
+            <div class="card card-discount" >
+              <p class="discount-new">חדש</p>
+              <img class="card-img-top" src="images/category5/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">כוננית וכולב תחפושות עם מראה</h5>
+                <p class="card-text">הרבה תאים, מאוד נוח, אחרונים במלאי!</p>
+                <p>מק׳׳ט - 1022א</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+  </div>
+</div>
+<!-- End Discounts & New products-->
+<!-- Who we are -->
+<div id="whowe" class="who-we-are-section">
+  <div class="container" onmouseover="toggler()">
+    <div class="row">
+        <img id="logo-ani" class="col-5  d-none d-md-block " src="images/logo.jpeg" alt="">
+        <div class="col-12 col-md-7 who-description">
+          <h2 id="about-title">המעיין לגן בע׳׳מ</h2>
+          <hr id="hr-about">
+          <p> מהחברות הותיקות והמובילות בתחום שיווק הציוד לגני ילדים ומוסדות חינוך, לחברה מבחר ענק של עזרים, ערכות המחשה, פלקטים, חומרי יצירה ומשחקים, כמו גם ריהוט פנים וחוץ ומתקני חצר המיועדים לגיל הרך.</p>
+          <p>לחברה שתי חנויות הפתוחות לקהל הרחב, הממוקמות ברמת גן ובבית נחמיה (מחסן תצוגה).</p>
+          <p>גאים בעבודה שוטפת מול רשויות מקומיות, גנים פרטיים וחנויות. בנוסף אנו זכיינים של החברה למשק וכלכלה.</p>
+          <p>ייצור כחול לבן!</p>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- End Who We are -->
+<!-- Contact form -->
+<div id="contsec" class="contact-section">
+  <section class="resume-section p-4 p-lg-5 text-center" id="contact" onmouseover="contacttoggler()">
+    <div class="my-auto">
+      <h2 class="mb-4"> יצירת קשר והזמנות</h2>
+      <div class="row justify-content-center">
+        <hr id="hr-cont" class="col-lg-1 col-4">
+      </div>
+      <ul class="fa-ul mb-4 ml-0 infoform">
+        <li id="mail-address">
+  <!--         your email address -->
+            <i class="fas fa-envelope-open mr-2 contact-icons"></i
+            >hamayan_lagan@walla.com</a
+          >
+        </li>
+        <li class="liinfo">
+          <i class="fas fa-mobile-alt mr-2 contact-icons"></i>09-7675528
+        </li>
+        <li liinfo>
+          <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>רמת גן, הירדן 83
+        </li>
+        <li liinfo>
+          <i class=""></i>המעין לגן 93 בע"מ בוויז
+        </li>
+      </ul>
+      <p id="leave-detailes">
+        מוזמנים להשאיר פרטים, עם מס׳ המוצרים שהינכם מעוניינים או כל בקשה אחרת. 
+      </p>
+      <form
+        class="contact-form d-flex flex-column align-items-center"
+        action="https://formspree.io/hamayan_lagan@walla.com"
+        method="POST"
+      >
+        <div class="form-group w-75">
+          <input
+            type="name"
+            class="form-control"
+            placeholder="שם"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group w-75">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="אי-מייל"
+            name="name"
+            required
+          />
+        </div>
+        <button type="reset" class="btn btn-dark" id="showMakatMail" onclick="printToDiv()">הוסף את מק׳׳טים הנבחרים למייל</button>
+
+        <div class="form-group w-75">
+          <textarea
+            class="form-control"
+            type="text"
+            placeholder="הודעה"
+            rows="7"
+            name="name"
+            required
+            id="makatitems"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit btn-info w-75">שלח בקשה</button>
+      </form>
+    </div>
+  </section>
+  <script
+  defer
+  src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+  crossorigin="anonymous"
+  ></script>
+</div>
+<!-- End Contact form -->
+<!-- makat list -->
+<div class="row">
+  <div id="makat_list" class="col-8 col-sm-4">
+      <div id="myDIV" class="header">
+          <p>הוסף מק׳׳ט לרשימה</p>
+          <input type="text" id="myInput" placeholder="מק׳׳ט">
+          <span onclick="newElement()" class="addBtn">הוסף</span>
+      </div>
+      <ul id="myUL">
+      </ul>
+  </div>
+</div>
+<button id="btnShowTodo" onclick="show_to_do()">+</button>
+<!--  -->
+<!-- Footer section -->
+<footer class="footer-distributed footer-section">
+  <div class="footer-right">
+    <a href="#"><i class="fa fa-facebook fab fab fa-facebook-f"></i></a>
+    <a href="#contsec"><i class="fa fa-twitter far fa-envelope"></i></a>
+    <a href="#"><i class="fa fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="footer-left">
+    <p class="footer-links">
+      <a class="link-1" href="#main-header">הבית</a>
+      <a class="a-links" href="#whowe">מי אנחנו</a>
+      <a href="#catsec">קטלוג</a>
+      <a href="#discsec">מבצעים וחדשים</a>
+      <a href="#contsec">יצירת קשר והזמנות</a>
+      <img class="made-israel" src="images/madeisrael.png" alt="">
+    </p>
+    <p>המעיין לגן &copy; 2020</p>
+  </div>
+</footer>
+<!-- End Footer -->
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
